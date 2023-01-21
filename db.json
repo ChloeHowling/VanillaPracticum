@@ -31,44 +31,16 @@
     {
       "courseId": "cs4660",
       "uvuId": "10222222",
-      "date": "1/8/2022 7:41:28 PM",
+      "date": "1/8/2022, 7:41:28 PM",
       "text": "Hopefully we get better at testing when we start working on Cypress",
       "id": "3A0rSmx"
     },
     {
       "courseId": "cs4660",
       "uvuId": "10111111",
-      "date": "1/10/2022 7:27:40 PM",
+      "date": "1/10/2022, 7:27:40 PM",
       "text": "Initial jquery practicum works.",
       "id": "LMH7POH"
-    },
-    {
-      "courseId": "cs4660",
-      "uvuId": "12345678",
-      "date": "1/20/2023 7:24:3 PM",
-      "text": "Testing.",
-      "id": "87U7Qok"
-    },
-    {
-      "courseId": "cs3380",
-      "uvuId": "00000000",
-      "date": "1/20/2023 9:9:58 PM",
-      "text": "vThe text-overflow property may be specified using one or two values. If one value is given, it specifies overflow behavior for the end of the line (the right end for left-to-right text, the left end for right-to-left text). If two values are given, the first specifies overflow behavior for the left end of the line, and the second specifies it for the right end of the line.",
-      "id": "DjHpwBp"
-    },
-    {
-      "courseId": "cs4660",
-      "uvuId": "10111111",
-      "date": "1/20/2023 10:58:21 PM",
-      "text": "Testing....",
-      "id": "NW1KRSR"
-    },
-    {
-      "courseId": "cs4660",
-      "uvuId": "10111111",
-      "date": "1/20/2023 11:24:22 PM",
-      "text": "Testing again",
-      "id": "OwrpctF"
     }
   ],
   "courses": [
