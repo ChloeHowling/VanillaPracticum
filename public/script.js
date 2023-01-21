@@ -29,18 +29,21 @@ select.addEventListener('change', () => {
     idBox.style.display = 'none';
     clearLogs();
   } else {
+    if (idInput != '') {
+      displayLogsById(idInput.value);
+    }
     idBox.style.display = 'flex';
   }
   logReady();
 });
 
 // ID input box validation check and display logs
-idInput.addEventListener('keyup', (event) => {
+function displayLogsById(id) {
   clearLogs();
   idInput.classList.remove('invalid');
 
   if (idInput.checkValidity()) {
-    fetch(`${url}logs?courseId=${select.value}&uvuId=${event.target.value}`)
+    fetch(`${url}logs?courseId=${select.value}&uvuId=${id}`)
       .then((response) => {
         if (response.status == 200 || response.status == 304) {
           response.json().then(displayLogs);
@@ -49,10 +52,14 @@ idInput.addEventListener('keyup', (event) => {
         }
       })
       .catch((error) => console.log(error));
-  } else {
+  } else if (idInput.value != '') {
     idInput.classList.add('invalid');
     logReady();
   }
+}
+
+idInput.addEventListener('keyup', (event) => {
+  displayLogsById(event.target.value);
 });
 
 // display logs
