@@ -1,8 +1,11 @@
 const select = document.querySelector('#course');
 const idBox = document.querySelector('#uvuIdBox');
 const idInput = document.querySelector('#uvuId');
+
+const logDisplay = document.querySelector('#logDisplay');
 const logList = document.querySelector('#uvuLogs');
 const logId = document.querySelector('#uvuIdDisplay');
+
 const newLogTxtArea = document.querySelector('#newLog');
 const newLogBtn = document.querySelector('#newLogBtn');
 
@@ -29,9 +32,7 @@ select.addEventListener('change', () => {
     idBox.style.display = 'none';
     clearLogs();
   } else {
-    if (idInput != '') {
-      displayLogsById(idInput.value);
-    }
+    displayLogsById(idInput.value);
     idBox.style.display = 'flex';
   }
   logReady();
@@ -64,7 +65,8 @@ idInput.addEventListener('keyup', (event) => {
 
 // display logs
 function displayLogs(data) {
-  clearLogs();
+  logDisplay.style.display = 'block';
+
   if (data.length < 1) {
     logId.innerText = `Logs not found for ${idInput.value}`;
   } else {
@@ -98,6 +100,7 @@ function createLogListItem(log) {
 function clearLogs() {
   logList.innerHTML = '';
   logId.innerText = '';
+  logDisplay.style.display = 'none';
 }
 
 // check if log is ready when user is typing in the textarea
