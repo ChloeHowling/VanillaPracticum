@@ -19,10 +19,11 @@
           name="course"
           data-cy="course_select"
         >
-          <option selected value="">Choose Courses</option></select
-        ><br />
+          <option selected value="">Choose Courses</option>
+        </select>
 
         <div id="uvuIdBox" style="display: none">
+          <br />
           <label for="uvuId">UVU ID</label>
           <!-- TODO: Only numbers, no letters or other characters-->
           <input
@@ -36,6 +37,7 @@
             required
           />
         </div>
+        <br />
         <div id="logDisplay" style="display: none">
           <h3 id="uvuIdDisplay" data-cy="uvuIdDisplay"></h3>
           <ul id="uvuLogs" data-cy="logs"></ul>

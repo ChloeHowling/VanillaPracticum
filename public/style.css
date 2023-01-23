@@ -31,7 +31,7 @@ form {
   border: 0.5px solid grey;
   border-radius: 10px;
   background-color: white;
-  padding: 50px;
+  padding: 50px clamp(10px, 5vw, 80px);
   overflow: auto;
 }
 pre {
@@ -60,6 +60,10 @@ select,
 input {
   padding: 15px 10px;
 }
+textarea {
+  padding: 10px;
+}
+
 button {
   background-color: #4caf50; /* Green */
   border: none;
@@ -80,5 +84,5 @@ button:disabled {
   flex-direction: column;
 }
 #logDisplay {
-  margin: 50px 0px;
+  margin: 30px 0px 0px 0px;
 }
